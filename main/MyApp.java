@@ -1,8 +1,6 @@
 package main;
-
 import base.*;
 import java.util.StringTokenizer;
-
 
 
 /**
@@ -16,11 +14,14 @@ public class MyApp
     public static Integer[] makeToken(String str){
         Integer[] result_array = new Integer[6];
         int changed_value = 0;
+        int i = 0;
         StringTokenizer st = new StringTokenizer(str, ",");
-        for(int i = 0; i < st.countTokens(); i ++){
+        do{
             changed_value = Integer.parseInt(st.nextToken());
             result_array[i] = changed_value;
+            i++;
         }
+        while(st.hasMoreTokens());
         return result_array;
     }
     
