@@ -1,5 +1,5 @@
 package main;
-import base.*;
+import base.Circle;
 
 /**
  * Write a description of class MyApp here.
@@ -29,7 +29,7 @@ public class MyApp
         
         System.out.println("원1 :" + c1 + "==> 면적:" + c1.getArea());
         System.out.priltln("원2 :" + c2 + "==> 면적:" + c2.getArea());
-        if()
+        if(c1.equals(c2))
             System.out.println("같은 원");
         else
             System.out.println("서로 다른 원");

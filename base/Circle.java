@@ -22,4 +22,13 @@ public class Circle implements Shape
     public double getArea(){
         return radius * radius * PI;
     }
+    
+    @Override
+    public boolean equals(Object obj){
+        Circle c = (Circle)obj;
+        if(this.x == c.x && this.y == c.y)
+            return true;
+        else
+            return false;
+    }
 }
